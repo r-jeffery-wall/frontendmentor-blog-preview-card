@@ -25,6 +25,7 @@ body {
     border-radius: 20px;
     box-shadow: hsl(0, 0%, 7%) 8px 8px;
     overflow: hidden;
+    transition: all 0.5s;
 }
 
 .preview-card * {
@@ -79,6 +80,15 @@ body {
     width: 32px;
     height: 32px;
     margin-right: 12px;
+}
+
+/* Active Styles */
+.preview-card:hover, .preview-card:active {
+    box-shadow: hsl(0, 0%, 7%) 16px 16px;
+}
+
+.preview-card:hover .title, .preview-card:active .title {
+    color: hsl(47, 88%, 63%);
 }
 /* Attribution */
 .attribution { font-size: 11px; text-align: center; }
